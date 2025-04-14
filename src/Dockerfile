@@ -9,5 +9,4 @@ COPY . .
 
 EXPOSE 8501
 
-CMD ["stramlit", "run", "app.py", "--server.address=0.0.0.0"]
-
+CMD ["streamlit", "run", "main.py", "--server.address=0.0.0.0"]
