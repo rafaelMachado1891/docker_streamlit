@@ -1,4 +1,3 @@
-
 import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
@@ -19,7 +18,7 @@ st.dataframe(df)
 
 st.subheader('Tendência de Vendas')
 fig, ax = plt.subplots(figsize=(10, 4))
-ax.plot(df["mes"], df["valor"], marker='o') 
+ax.plot(df["mes"], df["valor"], marker='o') # Corrigido para 'marker'
 ax.set_ylabel('vendas (R$)')
 ax.grid(True)
 st.pyplot(fig)
